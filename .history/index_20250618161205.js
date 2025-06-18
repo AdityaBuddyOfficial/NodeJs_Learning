@@ -1,7 +1,4 @@
 const hello="hello"
-<<<<<<< HEAD
-console.log(hello);
-=======
 console.log(hello);
 
 const http=require('http');
@@ -21,18 +18,14 @@ else if(pathName==='/product'){
     res.end("this is Product")
 }
 else{
-    res.writeHead(404,{
-        'content-type':'text/html',
-        'my-own-header':'hello-world'
-    })
-    res.end('<h1>page not found</h1>')
+    res.writeHead(404)
+    res.end("404-page not found")
 }
 
 });
 
-// res.end("this is hello from the server")
+res.end("this is hello from the server")
 
 server.listen(8000,'127.0.0.1',()=>{
     console.log("Listening to request on port 8000")
 })
->>>>>>> 7cbf4fb (routing)

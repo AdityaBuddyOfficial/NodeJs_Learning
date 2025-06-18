@@ -1,7 +1,4 @@
 const hello="hello"
-<<<<<<< HEAD
-console.log(hello);
-=======
 console.log(hello);
 
 const http=require('http');
@@ -35,4 +32,3 @@ else{
 server.listen(8000,'127.0.0.1',()=>{
     console.log("Listening to request on port 8000")
 })
->>>>>>> 7cbf4fb (routing)
